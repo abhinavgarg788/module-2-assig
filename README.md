@@ -1,4 +1,4 @@
-# module-2-assig
+# module-2-assignment
 <!DOCTYPE html>
 <html lang="en">
 <head>
