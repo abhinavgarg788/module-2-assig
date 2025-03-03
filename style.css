@@ -1,1 +1,79 @@
 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Sections Layout */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Section Styles */
+.section {
+    position: relative;
+    background-color: #e3f2fd;
+    padding: 20px;
+    flex: 1 1 30%; /* Default: 3 sections in a row */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.section-content {
+    padding-top: 30px; /* Space for the title */
+}
+
+/* Mobile View (Screen width <= 767px) */
+@media (max-width: 767px) {
+    .section {
+        flex: 1 1 100%; /* Full-width sections */
+    }
+}
+
+/* Tablet View (Screen width 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        flex: 1 1 48%; /* 2 sections per row */
+    }
+}
+
+/* Desktop View (Screen width >= 992px) */
+@media (min-width: 992px) {
+    .section {
+        flex: 1 1 30%; /* 3 sections per row */
+    }
+}
